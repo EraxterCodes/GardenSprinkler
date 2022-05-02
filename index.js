@@ -1,7 +1,7 @@
 var counter = 0
 
-function myFunction(){
-    let localcounter = document.getElementById("2")
+function WaterGarden(){
+    let localcounter = document.getElementById("TimeSinceLastPush")
     localcounter.innerHTML = counter
     counter = counter + 1
 }
