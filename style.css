@@ -9,11 +9,11 @@
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+    text-align: center;
 }
 
-.TimeSinceLastPush{
-    color: #4CAF50;
-    font-size: 12px;
-    font-weight: bold;
+.p{
     text-align: center;
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
 }
