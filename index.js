@@ -1,7 +1,19 @@
 var counter = 0
+var timerVar = setInterval(countTimer, 1000);
+var totalSeconds = 0;
 
-function WaterGarden(){
-    let localcounter = document.getElementById("TimeSinceLastPush")
-    localcounter.innerHTML = counter
-    counter = counter + 2
-}
+
+
+function WaterGarden() {
+           ++totalSeconds;
+           var hour = Math.floor(totalSeconds /3600);
+           var minute = Math.floor((totalSeconds - hour*3600)/60);
+           var seconds = totalSeconds - (hour*3600 + minute*60);
+           if(hour < 10)
+             hour = "0"+hour;
+           if(minute < 10)
+             minute = "0"+minute;
+           if(seconds < 10)
+             seconds = "0"+seconds;
+           document.getElementById("timer").innerHTML = hour + ":" + minute + ":" + seconds;
+        }
